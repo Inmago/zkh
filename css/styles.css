@@ -3,6 +3,10 @@ header
 	margin: 0 px;
 	padding: 0 px;
 }
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
 
 .header-frame
 {
@@ -69,7 +73,12 @@ body
 }
 .content
 {
-	background-color: #eaeaea;
+background: #EAEAEA;
+/*opacity: 1.00;*/
+border-top: 2px solid #FFFFFF;
+/*box-sizing: border-box;*/
+box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.5);/*, inset 0px 3px 5px rgba(1, 1, 1, 0.5);*/
+
 }
 #left-sidebar
 {
@@ -82,7 +91,7 @@ padding-left: 10px;
 }
 #center-content
 {
-
+ padding-right: 0;
 }
 #search_form{
 	background-image: url(../images/search_img.png);
@@ -149,6 +158,16 @@ font-size: 20px;
 	background-color: #496280;
 	background-blend-mode: multiply;
 }*/
+.rss p
+{
+	color: #626262;
+	text-align: center;
+}
+.counter
+{
+	color: #626262;
+	margin: 20px;
+}
 .center-menu
 {
 
@@ -263,12 +282,19 @@ font-size: 20px;
 	background-color: #496280;
 	background-blend-mode: multiply;
 	border-radius: 20px;
+	/*IE 9 and down*/
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+
+	/*IE 10 and 11*/
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    opacity: 0.8;
+}
 }
 .right-summary
 {
 	width: 100%;
 	display: block;
-	margin: 20px 0 20px 0;
+	margin: 15px 0 15px 0;
 	border: 1px solid #b0b0b0;
 	background-color: #fefefe;
 	border-radius:5px;
@@ -291,5 +317,45 @@ font-size: 20px;
 }
 .single-summary p
 {
+	
+}
+.footer
+{
+/* Rectangle 5 */
+background: #EAEAEA;
+opacity: 1.00;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.5);
+}
+.footer-logo
+{
+	padding:10px 20px 10px 40px;
+}
+#about
+{
+	font-family: "Open Sans";
+}
 
+#about h1
+{
+	/* ЖКХ новости Камчатки */
+
+font-style: normal;
+font-weight: normal;
+text-align: center;
+font-size: 24px;
+line-height: 100%;
+color: #737373;
+opacity: 1.00;
+/*text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+#about p
+{
+	text-align: center;
+}
+.footer-list ul
+{
+	font-family: "Open Sans";
+	list-style: none;
 }
